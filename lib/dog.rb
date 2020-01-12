@@ -1,20 +1,19 @@
 class Dog
- 
-  def initialize(name, breed)
-    @name = name
-    @breed = breed
+  
+  def name=(dogs_name)
+    @name = dogs_name
   end
- 
-  def name=(name, breed)
-    name, breed = namebreed.split
-    @name = name
-    @breed = breed
-  end
- 
+  
   def name
-    "#{@name} #{@breed}".strip
+    @name 
   end
- 
+  def breed=(breed)
+    @breed = breed
+  end
+  
+  def breed
+    @breed
+  end 
 end
 
 wishbone = Dog.new
