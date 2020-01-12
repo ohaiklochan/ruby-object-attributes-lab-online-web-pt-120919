@@ -16,3 +16,7 @@ class Dog
   end
  
 end
+
+wishbone = Dog.new
+wishbone.name = "Wishbone"
+wishbone.breed = ""
