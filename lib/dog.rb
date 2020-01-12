@@ -1,14 +1,18 @@
 class Dog
-  
-  def name(dog_name)
-    @this_dogs_name=(dog_name)
+ 
+  def initialize(first_name, last_name)
+    @first_name = first_name
+    @last_name = last_name
   end
-  
-  def breed(dog_breed)
-    @breed=(dog_breed)
+ 
+  def name=(full_name)
+    first_name, last_name = full_name.split
+    @first_name = first_name
+    @last_name = last_name
   end
-  
-  wishbone = Dog.new
-  wishbone.name = "Wishbone"
-  
-  
+ 
+  def name
+    "#{@first_name} #{@last_name}".strip
+  end
+ 
+end
