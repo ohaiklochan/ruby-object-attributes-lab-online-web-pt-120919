@@ -5,13 +5,13 @@ class Dog
     @breed = breed
   end
  
-  def name breed=(name, breed)
+  def name=(name, breed)
     name, breed = namebreed.split
     @name = name
     @breed = breed
   end
  
-  def name breed
+  def name
     "#{@name} #{@breed}".strip
   end
  
