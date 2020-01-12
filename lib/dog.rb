@@ -19,4 +19,4 @@ end
 
 wishbone = Dog.new
 wishbone.name = "Wishbone"
-wishbone.breed = ""
+wishbone.breed = "Jack Russel Terrier"
